@@ -1,0 +1,19 @@
+plugins {
+    id 'java'
+}
+
+group = 'dev.vortres'
+
+repositories {
+    mavenCentral()
+    maven { url 'https://jitpack.io' }
+}
+
+dependencies {
+    implementation("net.minestom:minestom-snapshots:e8e22a2b15")
+    implementation("io.prometheus:simpleclient_httpserver:0.16.0")
+    implementation("net.kyori:adventure-text-minimessage:4.12.0")
+    implementation("io.prometheus:simpleclient_hotspot:0.16.0")
+    implementation("de.articdive:jnoise-pipeline:4.0.0")
+    implementation("io.prometheus:simpleclient:0.16.0")
+}
