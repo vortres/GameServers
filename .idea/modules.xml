@@ -2,8 +2,11 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/GameServers.main.iml" filepath="$PROJECT_DIR$/.idea/modules/GameServers.main.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/GameServers.test.iml" filepath="$PROJECT_DIR$/.idea/modules/GameServers.test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Arena/GameServers.Arena.main.iml" filepath="$PROJECT_DIR$/.idea/modules/Arena/GameServers.Arena.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Arena/GameServers.Arena.test.iml" filepath="$PROJECT_DIR$/.idea/modules/Arena/GameServers.Arena.test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/LobbySrv/GameServers.LobbySrv.main.iml" filepath="$PROJECT_DIR$/.idea/modules/LobbySrv/GameServers.LobbySrv.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/LobbySrv/GameServers.LobbySrv.test.iml" filepath="$PROJECT_DIR$/.idea/modules/LobbySrv/GameServers.LobbySrv.test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Arena/net.minestom.GameServers.Arena.main.iml" filepath="$PROJECT_DIR$/.idea/modules/Arena/net.minestom.GameServers.Arena.main.iml" />
     </modules>
   </component>
 </project>

@@ -1,0 +1,37 @@
+plugins {
+    id 'java'
+    id "com.github.johnrengelman.shadow" version "8.1.1"
+}
+
+group = 'dev.vortres'
+
+repositories {
+    mavenCentral()
+    maven { url 'https://jitpack.io' }
+}
+
+dependencies {
+    implementation("net.minestom:minestom-snapshots:e8e22a2b15")
+    implementation("io.prometheus:simpleclient_httpserver:0.16.0")
+    implementation("net.kyori:adventure-text-minimessage:4.12.0")
+    implementation("io.prometheus:simpleclient_hotspot:0.16.0")
+    implementation("de.articdive:jnoise-pipeline:4.0.0")
+    implementation("io.prometheus:simpleclient:0.16.0")
+}
+
+compileJava.options.encoding = 'UTF-8'
+
+tasks.withType(JavaCompile).configureEach {
+    options.encoding = 'UTF-8'
+}
+
+tasks {
+    build { dependsOn(shadowJar) }
+}
+
+jar {
+    manifest {
+        attributes "Main-Class": "dev.vortres.lobby.Main"
+        attributes "Multi-Release": true
+    }
+}
